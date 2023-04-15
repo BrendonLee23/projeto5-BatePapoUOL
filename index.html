@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,50 @@
     <link rel="stylesheet" href="./Assets/Css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Bate Papo UOL</title>
 </head>
+
 <body>
-    <header >
+    <header class="header">
+        <a href="">
+            <img class="logo" src="./Imagens/logo 1.svg" alt="">
+        </a>
+        <a href="">
+            <ion-icon class="icone" name="people"></ion-icon>
+        </a>
     </header>
+
+
     <main class="container">
+
+    <!--
+        <ul class="saguão">
+            <li data-test="message" class="mensagem">
+                <p></p>
+            </li>
+            <br>
+        </ul>
+    -->
+
     </main>
-    <footer>
+
+
+    <footer class="area-mensagem">
+        <form>
+            <textarea data-test="input-message" id="mensagem" placeholder="Escreva aqui..."></textarea>
+            <button data-test="send-message" class="enviar-mensagem" type="button">
+                <a href="">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                </a>
+            </button>
+        </form>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./Assets/JS/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
-</html>
 
+</html>
