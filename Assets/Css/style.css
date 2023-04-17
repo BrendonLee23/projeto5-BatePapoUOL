@@ -4,10 +4,11 @@
 
 body {
     font-family: 'Roboto';
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 200px 0;
+}
+
+main {
+    padding: 100px 0;
 }
 
 .header {
@@ -21,6 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 999;
 }
 
 .icone {
@@ -52,17 +54,16 @@ footer {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 999;
 }
 
 .container {
     background-color: #f3f3f3;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     bottom: 0px;
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
-    padding-top: 10px;
 }
 
 .area-mensagem {
@@ -128,10 +129,38 @@ footer {
     padding-left: 20px;
 }
 
-.saguão p {
+.saguão li {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background: #DCDCDC;
+    border-radius: 2px;
+}
+
+.saguão{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.span-time {
+    color: #AAAAAA;
+}
+
+.span-bold {
+    color: #000000;
+    font-weight: 700;
 }

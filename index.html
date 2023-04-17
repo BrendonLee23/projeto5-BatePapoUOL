@@ -19,39 +19,32 @@
         <a href="">
             <img class="logo" src="./Imagens/logo 1.svg" alt="">
         </a>
-        <a href="">
             <ion-icon class="icone" name="people"></ion-icon>
-        </a>
     </header>
 
 
     <main class="container">
 
-    <!--
-        <ul class="saguão">
-            <li data-test="message" class="mensagem">
-                <p></p>
-            </li>
-            <br>
-        </ul>
-    -->
+        <div class="container">
+            <ul id="saguão" class="saguão">
+                
+            </ul>
+        </div>
 
     </main>
-
 
     <footer class="area-mensagem">
         <form>
             <textarea data-test="input-message" id="mensagem" placeholder="Escreva aqui..."></textarea>
-            <button data-test="send-message" class="enviar-mensagem" type="button">
-                <a href="">
-                    <ion-icon name="paper-plane-outline"></ion-icon>
-                </a>
-            </button>
+            <div data-test="send-message" class="enviar-mensagem" type="text">
+                    <ion-icon onclick="enviarMSG()" name="paper-plane-outline"></ion-icon>
+            </div>
         </form>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./Assets/JS/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./Assets/JS/script.js"></script>
 </body>
 
 </html>
+
